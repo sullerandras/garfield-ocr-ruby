@@ -1,3 +1,4 @@
+#encoding: US-ASCII
 require 'spec_helper'
 require 'interactors/garfield_ocr'
 require 'entities/comic_strip'

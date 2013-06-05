@@ -9,9 +9,9 @@ class ComicStrip
 	end
 
 	def self.ocr(bw_image)
-		ComicStrip.new ComicStrip.ocr_bubbles(bw_image)
+		ComicStrip.new ComicStrip.recognize_bubbles(bw_image)
 	end
-	def self.ocr_bubbles(bw_image)
+	def self.recognize_bubbles(bw_image)
 		bubbles = []
 		bw_image.each_with_indexes do |is_black, row, col|
 			if !is_black
